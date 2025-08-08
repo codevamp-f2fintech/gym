@@ -2,15 +2,15 @@
 
 import { ContactSection } from "@/components/ContactSec";
 import { EquipmentSection } from "@/components/EquipmentSec";
-import { FooterLast } from "@/components/common/FooterSec";
 import { GallerySection } from "@/components/GallerySec";
-import { HeroSection } from "@/components/Herosec";
 import { InteriorSection } from "@/components/InteriorSec";
 import { Navigation } from "@/components/NavigationSec";
 import { PackagesSection } from "@/components/PackagesSec";
 import { RegistrationForm } from "@/components/RegistrationSec";
 import { TestimonialsSection } from "@/components/TestimonialSec";
 import { VideosSection } from "@/components/VideoSec";
+import { HeroSection } from "@/components/HeroSec";
+import { FooterLast } from "@/components/common/FooterSec";
 
 export default function EngrossFitness() {
   const testimonials = [
@@ -248,7 +248,7 @@ export default function EngrossFitness() {
       <PackagesSection packages={packages} scrollToSection={scrollToSection} />
       <RegistrationForm />
       <ContactSection />
-      <FooterLast />
+      <FooterLast scrollToSection={scrollToSection} />
     </div>
   );
 }
